@@ -746,81 +746,34 @@
     "material_thickness": 3,
     "flags": [ "STURDY", "SKINTIGHT" ],
     "armor": [ { "encumbrance": 5, "coverage": 85, "covers": [ "torso" ] } ]
-  },  {
+  },
+  {
     "id": "motorbike_armor",
     "repairs_like": "survivor_suit",
     "type": "ARMOR",
-    "category": "armor",
     "name": { "str": "motorcycle armor" },
-    "//": "Motorcycle armor previously had 28 encumbrance. Realistically, it's not hard to move around in, it's just not the most breathable. -RB",
-    "description": "An armored jacket used by dirt bikers and motorcyclists.",
+    "description": "A suit of armor used by dirt bikers and motorcyclists.",
     "weight": "2125 g",
-    "volume": "2 L",
+    "volume": "1 L",
     "price": 15000,
     "price_postapoc": 1000,
     "bashing": 8,
-    "to_hit": -3,
-    "material": [ "lycra", "plastic" ],
+    "material": [ "kevlar", "cotton" ],
     "symbol": "[",
     "looks_like": "jacket_leather",
     "color": "dark_gray",
     "armor": [
-      {
-        "material": [
-          { "type": "lycra", "covered_by_mat": 100, "thickness": 0.9 },
-          { "type": "plastic", "covered_by_mat": 65, "thickness": 3.5 }
-        ],
-        "specifically_covers": [ "arm_shoulder_l", "arm_shoulder_r" ],
-        "coverage": 100,
-        "covers": [ "arm_l", "arm_r" ],
-        "encumbrance": 20
-      },
-      {
-        "material": [
-          { "type": "lycra", "covered_by_mat": 100, "thickness": 0.9 },
-          { "type": "plastic", "covered_by_mat": 75, "thickness": 3.5 }
-        ],
-        "specifically_covers": [ "arm_upper_l", "arm_upper_r" ],
-        "covers": [ "arm_l", "arm_r" ],
-        "coverage": 100
-      },
-      {
-        "material": [
-          { "type": "lycra", "covered_by_mat": 100, "thickness": 0.9 },
-          { "type": "plastic", "covered_by_mat": 60, "thickness": 3.5 }
-        ],
-        "specifically_covers": [ "arm_elbow_l", "arm_elbow_r" ],
-        "covers": [ "arm_l", "arm_r" ],
-        "coverage": 100
-      },
-      {
-        "material": [
-          { "type": "lycra", "covered_by_mat": 100, "thickness": 0.9 },
-          { "type": "plastic", "covered_by_mat": 65, "thickness": 3.0 }
-        ],
-        "specifically_covers": [ "arm_lower_l", "arm_lower_r" ],
-        "covers": [ "arm_l", "arm_r" ],
-        "coverage": 100
-      },
-      {
-        "material": [
-          { "type": "lycra", "covered_by_mat": 100, "thickness": 0.9 },
-          { "type": "plastic", "covered_by_mat": 80, "thickness": 4.0 }
-        ],
-        "covers": [ "torso" ],
-        "coverage": 100,
-        "encumbrance": 20
-      }
+      { "covers": [ "torso" ], "coverage": 95, "encumbrance": [ 28, 30 ] },
+      { "covers": [ "arm_l", "arm_r" ], "coverage": 95, "encumbrance": [ 28, 28 ] }
     ],
     "pocket_data": [
       { "pocket_type": "CONTAINER", "max_contains_volume": "250 ml", "max_contains_weight": "1 kg", "moves": 120 },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "250 ml", "max_contains_weight": "1 kg", "moves": 120 },
-      { "pocket_type": "CONTAINER", "max_contains_volume": "750 ml", "max_contains_weight": "1.75 kg", "moves": 275 }
+      { "pocket_type": "CONTAINER", "max_contains_volume": "250 ml", "max_contains_weight": "1 kg", "moves": 120 }
     ],
-    "warmth": 25,
+    "warmth": 35,
     "material_thickness": 4,
     "environmental_protection": 2,
-    "flags": [ "OUTER", "WATERPROOF", "VARSIZE" ]
+    "flags": [ "VARSIZE", "WATERPROOF" ]
   },
   {
     "id": "plastron_cotton",
